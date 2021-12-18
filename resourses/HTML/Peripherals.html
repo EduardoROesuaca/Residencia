@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:80/Source_code/resourses/CSS/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:80/Source_code/index.html">Inicio</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Computers.html" id="compu">Computadoras</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Components.html" id="compo">Componentes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Peripherals.html" id="perip">Perif&eacute;ricos</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Networks.html" id="nets">Redes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/SmartHome.html" id="smart">SmartHome</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Cart.html">Ver Carrito</a>
+        <div class="animation start-home" id="mark"></div>
+    </nav>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/1.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/2.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/3.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <nav style="width: 100%; text-align: center;">   
+        <a href="#teclados">Teclados</a>
+        <a href="#headsets">Headset</a>
+        <a href="#mouse">Mouse</a>
+        <a href="#parlantes">Parlantes</a>
+    </nav>
+
+    <div class="container">
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="teclados">LOS MEJORES TECLADOS GAMING</h1> 
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/corsair-k100-rgb.jpg">
+            <h4>Corsair K100 RGB</h4>
+            <br>
+            <p id="corsair-k100-rgb.info">Tipo: Mec&aacute;nico <br> Switch: Cherry MX Speed <br> Teclas macro 6 <br><br> ₡148.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="corsair-k100-rgb" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/steelseries-apex-7-red.jpg">
+            <h4>Steelseries Apex 7 Red</h4>
+            <br>
+            <p id="steelseries-apex-7-red.info">Tipo: Mec&aacute;nico <br> Switch: Red Lineal <br> Anti-Ghosting <br><br> ₡97.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="steelseries-apex-7-red" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-g413.jpg">
+            <h4>Logitech G413</h4>
+            <br>
+            <p id="logitech-g413.info">Tipo: Mec&aacute;nico <br> Switch: ROMER G <br> Anti-Ghosting <br><br> ₡50.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-g413" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/redragon-k585r-diti-elite-wireless.jpg">
+            <h4>Redragon K585R Elite Wireless</h4>
+            <br>
+            <p id="redragon-k585r-diti-elite-wireless.info">Tipo: Mec&aacute;nico <br> Switch: Outemu Blue <br> 2.4 Wireless o cableado <br><br> ₡24.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="redragon-k585r-diti-elite-wireless" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/redragon-k599-krs-deimos-rgb-wireless.jpg">
+            <h4>Redragon K599 KRS Deimos Wireless</h4>
+            <br>
+            <p id="redragon-k599-krs-deimos-rgb-wireless.info">Tipo: Mec&aacute;nico <br> Modelo: K599 RS Deimos Wireless <br> Anti Ghosting <br><br> ₡45.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="redragon-k599-krs-deimos-rgb-wireless" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/steelseries-apex-7-tkl-red.jpg">
+            <h4>Steelseries Apex 7 TLK</h4>
+            <br>
+            <p id="steelseries-apex-7-tkl-red.info">Tipo: Mec&aacute;nico <br> Switch: Red Lineal <br> Anti-Ghosting <br><br> ₡95.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="steelseries-apex-7-tkl-red" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="headsets">HEADSETS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/astro-a20-wireless-xbox.jpg">
+            <h4>Astro A20 Wireless</h4>
+            <br>
+            <p id="astro-a20-wireless-xbox.info">Microfono: unidireccional  <br> Alcance: 15 metros <br> Tiempo de Carga: 3,5 horas <br><br> ₡78.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="astro-a20-wireless-xbox" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-rog-delta-rgb-quad-dac.jpg">
+            <h4>Asus Rog Delta RGB</h4>
+            <br>
+            <p id="asus-rog-delta-rgb-quad-dac.info">Audio: 7.1 <br> Conexi&oacute;n: USB/USB-C <br> Perfecto para juegos FPS <br><br> ₡118.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-rog-delta-rgb-quad-dac" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/corsair-hs70-pro-wireless-carbon.jpg">
+            <h4>Corsair HS70 Pro Wireless</h4>
+            <br>
+            <p id="corsair-hs70-pro-wireless-carbon.info">Conexi&oacute;n: Inalambrica <br> Audio: 7.1 <br> Sonido Envolvente <br><br> ₡65.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="corsair-hs70-pro-wireless-carbon" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/razer-kraken-tournament-edition-thx.jpg">
+            <h4>Razer Kraken Tournament Edition</h4>
+            <br>
+            <p id="razer-kraken-tournament-edition-thx.info">Conexion: 3.5mm/USB <br> Audio: 7.1 <br> THX Spatial Audio <br><br> ₡55.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="razer-kraken-tournament-edition-thx" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/corsair-virtuoso-rgb-wireless-se-espresso.jpg">
+            <h4>Corsair Virtuoso RGB Wireless</h4>
+            <br>
+            <p id="corsair-virtuoso-rgb-wireless-se-espresso.info">Conexion: Wireless / USB / 3.5mm <br> Audio: 7.1 Surround <br> Corsair iCUE RGB <br><br> ₡135.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="corsair-virtuoso-rgb-wireless-se-espresso" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/hyperx-cloud-revolver-71.jpg">
+            <h4>Hyperx Cloud Revolver 71</h4>
+            <br>
+            <p id="hyperx-cloud-revolver-71.info">Conexion: USB <br> Audio: 7.1 <br> Micr&oacute;fono de condensador electret <br><br> ₡85.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="hyperx-cloud-revolver-71" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="mouse">LOS MEJORES MOUSE PARA GAMING!</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-g502-hero-kda.jpg">
+            <h4>Logitech G502 Hero Kda</h4>
+            <br>
+            <p id="logitech-g502-hero-kda.info">Sensor: HERO <br> DPI: Hasta 16000 <br> Peso: 121 gramos <br><br> ₡32.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-g502-hero-kda" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/redragon-griffin-m607-elite-rgb-wireless.jpg">
+            <h4>Redragon Griffin M607 Elite</h4>
+            <br>
+            <p id="redragon-griffin-m607-elite-rgb-wireless.info">Sensor: Pixart PWM 3312 <br> DPI: Hasta 7200 <br> Peso: 121 gramos <br><br> ₡9.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="redragon-griffin-m607-elite-rgb-wireless" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/razer-basilisk-ultimate-wireless-incluye-base.jpg">
+            <h4>Razer Basilisk Ultimate</h4>
+            <br>
+            <p id="razer-basilisk-ultimate-wireless-incluye-base.info">Bateria: 100 Horas <br> DPI: 20000 <br> Razer Chroma RGB <br><br> ₡98.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="razer-basilisk-ultimate-wireless-incluye-base" onclick="add_product(name)">
+        </div>
+
+
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/patriot-viper-v530.jpg">
+            <h4>Patriot Viper V530</h4>
+            <br>
+            <p id="patriot-viper-v530.info">Conexi&oacute;n: USB <br> LED: Rojo <br> DPI: 4000 <br><br> ₡12.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="patriot-viper-v530" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-g600.jpg">
+            <h4>Logitech G600</h4>
+            <br>
+            <p id="logitech-g600.info">Conexi&oacute;n: USB <br> Logitech Lightsync RGB <br> DPI: 8200 <br><br> ₡20.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-g600" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-m280.jpg">
+            <h4>Logitech M280</h4>
+            <br>
+            <p id="logitech-m280.info">Conexi&oacute;n: USB <br> DPI: 12000 <br> 6 Botones <br><br> ₡15.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-m280" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="parlantes">PARLANTES</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/argom-3120-boogieboom-impermeable-tws-bluetooth.jpg">
+            <h4>Argom BoogieBoom Impermeable</h4>
+            <br>
+            <p id="argom-3120-boogieboom-impermeable-tws-bluetooth.info">Conectividad: Bluetoothc <br> Bateria: 1200 mAh <br> IPx7 <br><br> ₡18.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="argom-3120-boogieboom-impermeable-tws-bluetooth" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-g560-lightsync-rgb.jpg">
+            <h4>Logitech G560 Lightsync</h4>
+            <br>
+            <p id="logitech-g560-lightsync-rgb.info">Salida: 240 Watts <br> DTS:X Ultra surround <br> Bluetooth <br><br> ₡115.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-g560-lightsync-rgb" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-z906.jpg">
+            <h4>Logitech Z906</h4>
+            <br>
+            <p id="logitech-z906.info">Salida: 1000 Watts <br> Certificación THX - Dolby Surround <br> Dolby Digital y DTS <br><br> ₡275.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-z906" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-z607-51-surroound-bluetooth.jpg">
+            <h4>Logitech Z607 Surroound</h4>
+            <br>
+            <p id="logitech-z607-51-surroound-bluetooth.info">Lector de tarjetas SD <br> Bluetooth 4.2 <br> Altavoces satélite: 55 W <br><br> ₡60.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-z607-51-surroound-bluetooth" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-ue-boom-3-bluetooth.jpg">
+            <h4>Logitech Boom Bluetooth</h4>
+            <br>
+            <p id="logitech-ue-boom-3-bluetooth.info">Bateria: 15 horas <br> One Touch <br> Portabilidad mejorada <br><br> ₡82.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-ue-boom-3-bluetooth" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/logitech-s150.jpg">
+            <h4>Logitech S150</h4>
+            <br>
+            <p id="logitech-s150.info">Salida: 12 Watts <br> Conexi&oacute;n: USB <br> Color: Negro <br><br> 14.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="logitech-s150" onclick="add_product(name)">
+        </div>
+
+    </div>
+
+    <script src="http://127.0.0.1:80/Source_code/resourses/JS/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>

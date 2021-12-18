@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:80/Source_code/resourses/CSS/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:80/Source_code/index.html">Inicio</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Computers.html" id="compu">Computadoras</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Components.html" id="compo">Componentes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Peripherals.html" id="perip">Perif&eacute;ricos</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Networks.html" id="nets">Redes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/SmartHome.html" id="smart">SmartHome</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Cart.html">Ver Carrito</a>
+        <div class="animation start-home" id="mark"></div>
+    </nav>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/1.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/2.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/3.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <nav style="width: 100%; text-align: center;">   
+        <a href="#amd">AMD</a>
+        <a href="#intel" style="margin-left: 65px;">INTEL</a>
+        <a href="#mb" style="margin-left: 65px;">MotherBoard</a>
+        <a href="#ram" style="margin-left: 65px;">RAM</a>
+        <a href="#storage" style="margin-left: 65px;">Almacenamiento</a>
+        <a href="#gpu" style="margin-left: 65px;">Tarjetas Gr&aacute;ficas</a>
+        <a href="#psu" style="margin-left: 65px;">Fuentes de poder</a>
+        <a href="#cases" style="margin-left: 65px;">Cases</a>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="amd">PROCESADORES AMD</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/amd-athlon-3000g.jpg">
+            <h4>AMD Athlon 3000G</h4>
+            <br>
+            <p id="amd-athlon-3000g.info">Reloj base: 3.5GHz <br> N.° de núcleos: 2 <br> Socket: AM4 <br><br> ₡35.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="amd-athlon-3000g" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/amd-ryzen-9-5900x.jpg">
+            <h4>AMD Ryzen 9 5900X</h4>
+            <br>
+            <p id="amd-ryzen-9-5900x.info">Reloj base: 3.9GHz <br> N.° de núcleos: 6 <br> Socket: LGA1200 <br><br> ₡400.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="amd-ryzen-9-5900x" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/amd-ryzen-5-3600.jpg">
+            <h4>AMD Ryzen 5 3600</h4>
+            <br>
+            <p id="amd-ryzen-5-3600.info">Reloj base: 4.2GHz <br> N.° de núcleos: 6 <br> Socket: AM4 <br><br> ₡152.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="amd-ryzen-5-3600" onclick="add_product(name)">
+        </div>
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="intel">PROCESADORES INTEL</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/intel-core-i3-10105f.jpg">
+            <h4>Intel Core I3 10105F</h4>
+            <br>
+            <p id="intel-core-i3-10105f.info">Reloj base: 3.7GHz <br> N.° de núcleos: 4 <br> Socket: LGA1200 <br><br> ₡70.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="intel-core-i3-10105f" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/intel-core-i5-11600k.jpg">
+            <h4>Intel Core I5 11600K</h4>
+            <br>
+            <p id="intel-core-i5-11600k.info">Reloj base: 3.9GHz <br> N.° de núcleos: 6 <br> Socket: LGA1200 <br><br> ₡210.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="intel-core-i5-11600k" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/intel-core-i9-12900kf.jpg">
+            <h4>Intel Core I9 12900KF</h4>
+            <br>
+            <p id="intel-core-i9-12900kf.info">Reloj base: 3.9GHz <br> N.° de núcleos: 16 <br> Socket: LGA1200 <br><br> ₡500.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="intel-core-i9-12900kf" onclick="add_product(name)">
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;" id="mb">LAS MEJORES TARJETAS MADRE PARA GAMING PARA PROCESADORES AMD!</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/gigabyte-b550m-aorus-elite.jpg">
+            <h4>Gigabyte B550M Aorus Elite</h4>
+            <br>
+            <p id="gigabyte-b550m-aorus-elite.info">Socket: AM4 <br> PCIe 4 ultrarresistente <br> RGB Fusion 2.0 <br><br> ₡75.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="gigabyte-b550m-aorus-elite" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-rog-strix-b550-e-gaming.jpg">
+            <h4>Asus Rog Strix B550 E Gaming</h4>
+            <br>
+            <p id="asus-rog-strix-b550-e-gaming.info">Socket: AM4 <br> Wi-Fi 6 AX <br> Chipset: AMD B550 <br><br> ₡220.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-rog-strix-b550-e-gaming" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-crosshair-viii-dark-hero-x570.jpg">
+            <h4>Asus Crosshair VIII Dark Hero X570</h4>
+            <br>
+            <p id="asus-crosshair-viii-dark-hero-x570.info">Socket: AM4 <br> Chipset: AMD X570 <br> Formato: ATX <br><br> ₡364.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-crosshair-viii-dark-hero-x570" onclick="add_product(name)">
+        </div>
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;">LAS MEJORES TARJETAS MADRE PARA GAMING PARA PROCESADORES INTEL!</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asrock-b560-steel-legend.jpg">
+            <h4>Asrock B560 Steel Legend</h4>
+            <br>
+            <p id="asrock-b560-steel-legend.info">Socket: LGA1200 <br> Chipset: B560 <br> Formato: ATX <br><br> ₡101.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asrock-b560-steel-legend" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/gigabyte-b560m-ds3h-ac-wifi.jpg">
+            <h4>Gigabyte B560M DS3H AC WIFI</h4>
+            <br>
+            <p id="gigabyte-b560m-ds3h-ac-wifi.info">Socket: LGA1200 <br> Chipset: B560 <br> Formato: Micro-ATX <br><br> ₡85.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="gigabyte-b560m-ds3h-ac-wifi" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-tuf-gaming-b560m-plus-wifi.jpg">
+            <h4>Asus TUF Gaming B560M</h4>
+            <br>
+            <p id="asus-tuf-gaming-b560m-plus-wifi.info">Socket: LGA1200 <br> Chipset: B560 <br> Formato: ATX <br><br> ₡34.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-tuf-gaming-b560m-plus-wifi" onclick="add_product(name)">
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;" id="ram">MEMORIAS RAM</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/patriot-viper-steel-8-gb-ddr4-3600.jpg">
+            <h4>Patriot Viper Steel 8 GB</h4>
+            <br>
+            <p id="patriot-viper-steel-8-gb-ddr4-3600.info">Frecuencia: 3600Mhz <br> Tipo: DDR4 <br> Con Disipador T&eacute;rmico <br><br> ₡30.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="patriot-viper-steel-8-gb-ddr4-3600" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/geil-super-luce-tuf-rgb-8-gb-ddr4-3600.jpg">
+            <h4>Geil Super Luce TUF 8 GB</h4>
+            <br>
+            <p id="geil-super-luce-tuf-rgb-8-gb-ddr4-3600.info">Frecuencia: 3600Mhz <br> Tipo: DDR4 <br> Latencia: 18 <br><br> ₡31.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="geil-super-luce-tuf-rgb-8-gb-ddr4-3600" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/adata-xpg-spectrix-d60g-16-gb-ddr4-3200.jpg">
+            <h4>Adata XPG Spectrix D60G 16 GB</h4>
+            <br>
+            <p id="adata-xpg-spectrix-d60g-16-gb-ddr4-3200.info">Frecuencia: 3200Mhz <br> Tipo: DDR4 <br> Latencia: 16 <br><br> ₡33.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="adata-xpg-spectrix-d60g-16-gb-ddr4-3200" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/aorus-rgb-8-gb-ddr4-3200.jpg">
+            <h4>Aorus DDR4 3200Mhz 8GB</h4>
+            <br>
+            <p id="aorus-rgb-8-gb-ddr4-3200.info">Frecuencia: 3200Mhz <br> Tipo: DDR4 <br> RGB Fusion 2.0 Supported <br><br> ₡33.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="aorus-rgb-8-gb-ddr4-3200" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/gskill-trident-z-rgb-8-gb-ddr4-3200.jpg">
+            <h4>G.SKILL Trident Z RGB 8GB</h4>
+            <br>
+            <p id="gskill-trident-z-rgb-8-gb-ddr4-3200.info">Frecuencia: 3200Mhz <br> Tipo: DDR4 <br> Optimizadas para Ryzen <br><br> ₡35.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="gskill-trident-z-rgb-8-gb-ddr4-3200" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/gskill-trident-z-royal-16-gb-2-x-8-gb-ddr4-4000-silver.jpg">
+            <h4>Trident Z Royal 16 GB(2x8)</h4>
+            <br>
+            <p id="gskill-trident-z-royal-16-gb-2-x-8-gb-ddr4-4000-silver.info">Frecuencia: 4000Mhz <br> Tipo: DDR4 <br> Latencia: 17 <br><br> ₡147.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="gskill-trident-z-royal-16-gb-2-x-8-gb-ddr4-4000-silver" onclick="add_product(name)">
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;">DISCOS DE ESTADO SOLIDO SATA III</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/kingston-a400-240-gb.jpg">
+            <h4>Kingston A400 240 GB</h4>
+            <br>
+            <p id="kingston-a400-240-gb.info">Capacidad: 240 GB <br> Lectura: 500 MB/s <br> Escritura: 450 MB/s <br><br> 24.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="kingston-a400-240-gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/teamgroup-gx1-480-gb.jpg">
+            <h4>Teamgroup GX1 480 GB</h4>
+            <br>
+            <p id="teamgroup-gx1-480-gb.info">Capacidad: 480 GB <br> Lectura: 530 MB/s <br> Escritura: 480 MB/s <br><br> ₡38.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="teamgroup-gx1-480-gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/adata-su630-480gb.jpg">
+            <h4>Adata SU630 480 GB</h4>
+            <br>
+            <p id="adata-su630-480gb.info">Capacidad: 480 GB <br> Lectura: 520 MB/s <br> Escritura: 450 MB/s <br><br> ₡38.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="adata-su630-480gb" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;">DISCOS DUROS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/disco-duro-toshiba-1-tb-laptop.jpg">
+            <h4>Disco Duro Toshiba 1TB Laptop</h4>
+            <br>
+            <p id="disco-duro-toshiba-1-tb-laptop.info">Capacidad: 1 TB <br> 5400 RPM <br> Interfaz: SATA III <br><br> ₡33.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="disco-duro-toshiba-1-tb-laptop" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/disco-duro-western-digital-blue-2-tb-5400-rpm.jpg">
+            <h4>Disco Duro WD Blue 2TB</h4>
+            <br>
+            <p id="disco-duro-western-digital-blue-2-tb-5400-rpm.info">Capacidad: 2 TB <br> 5400 RPM <br> Interfaz: SATA III <br><br> ₡37.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="disco-duro-western-digital-blue-2-tb-5400-rpm" onclick="add_product(name)">
+        </div>
+
+       
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;">DISCOS DE ESTADO SOLIDO M.2</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/wd-blue-sn550-250gb-m2.jpg">
+            <h4>WD Blue SN550 250GB</h4>
+            <br>
+            <p id="wd-blue-sn550-250gb-m2.info">Lectura: 2400 MB/s <br> Escritura: 1750 MB/s <br> Interfaz: M.2 <br><br> ₡35.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="wd-blue-sn550-250gb-m2" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/adata-xpg-gammix-s11-pro-2-tb.jpg">
+            <h4>Adata XPG Gammix S11 Pro</h4>
+            <br>
+            <p id="adata-xpg-gammix-s11-pro-2-tb.info">Lectura: 3500 MB/s <br> Escritura: 3000 MB/s <br> Interfaz: M.2 <br><br> ₡160.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="adata-xpg-gammix-s11-pro-2-tb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/adata-xpg-spectrix-s40g-rgb-4-tb.jpg">
+            <h4>Adata XPG Spectrix S40G 4TB</h4>
+            <br>
+            <p id="adata-xpg-spectrix-s40g-rgb-4-tb.info">Lectura: 3500 MB/s <br> Escritura: 3000 MB/s <br> Interfaz: M.2 <br><br> ₡336.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="adata-xpg-spectrix-s40g-rgb-4-tb" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;" id="gpu">TARJETAS GR&Aacute;FICAS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/biostar-radeon-rx-550-4gb.jpg">
+            <h4>Biostar Radeon RX550 4GB</h4>
+            <br>
+            <p id="biostar-radeon-rx-550-4gb.info">Bus: PCI-E 3.0 <br> Memoria: 4 GB GDDR5 <br> 512 Cuda Cores <br><br> ₡89.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="biostar-radeon-rx-550-4gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/sapphire-pulse-radeon-rx-6600-xt-oc-8-gb.jpg">
+            <h4>Sapphire Radeon RX6600 XT OC</h4>
+            <br>
+            <p id="sapphire-pulse-radeon-rx-6600-xt-oc-8-gb.info">Bus: PCI-E 4.0 <br> Memoria: 8 GB GDDR6 <br> RDNA 2 Architecture <br><br> ₡408.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="sapphire-pulse-radeon-rx-6600-xt-oc-8-gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/msi-radeon-rx-6900-xt-gaming-z-trio-16-gb.jpg">
+            <h4>AMD RX 3900 XT Z Trio 16GB</h4>
+            <br>
+            <p id="msi-radeon-rx-6900-xt-gaming-z-trio-16-gb.info">Bus: PCI-E 4.0 <br> Memoria: 16 GB Gddr6 <br> Boost: 2425MHz <br><br> ₡1.190.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="msi-radeon-rx-6900-xt-gaming-z-trio-16-gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/gigabyte-geforce-gtx-1660-oc-6-gb.jpg">
+            <h4>Gigabyte GTX 1660 OC 6 GB</h4>
+            <br>
+            <p id="gigabyte-geforce-gtx-1660-oc-6-gb.info">Bus: PCI-E 3.0 <br> Memoria: 6 GB GDDR6 <br> Core clock: 1830 MHz <br><br> ₡335.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="gigabyte-geforce-gtx-1660-oc-6-gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-tuf-geforce-rtx3060-oc-12g-v2.jpg">
+            <h4>Asus TUF RTX 3060 OC V2</h4>
+            <br>
+            <p id="asus-tuf-geforce-rtx3060-oc-12g-v2.info">Bus: PCI-E 4.0 <br> Memoria: 12 GB GDDR6 <br> Core clock: 1852 MHz <br><br> ₡495.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-tuf-geforce-rtx3060-oc-12g-v2" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/evga-geforce-rtx-3080-ti-ftw3-ultra-12-gb.jpg">
+            <h4>Evga RTX 3080 Ti FTW3 ULTRA</h4>
+            <br>
+            <p id="evga-geforce-rtx-3080-ti-ftw3-ultra-12-gb.info">Bus: PCI-E 4.0 <br> Memoria: 12 GB GDDR6 <br> Core clock: 1800 MHz <br><br> ₡1.680.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="evga-geforce-rtx-3080-ti-ftw3-ultra-12-gb" onclick="add_product(name)">
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;" id="psu">FUENTES DE PODER</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/corsair-vs600.jpg">
+            <h4>Corsair VS600</h4>
+            <br>
+            <p id="corsair-vs600.info">Certificaci&oacute;n: 80 Plus <br> Poder: 600 W <br> Modular: No <br><br> 32.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="corsair-vs600" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/be-quiet-system-power-u9-600w-80-plus-bronze.jpg">
+            <h4>Be Quiet 600W</h4>
+            <br>
+            <p id="be-quiet-system-power-u9-600w-80-plus-bronze.info">Certificaci&oacute;n: 80 Plus Bronze<br> Poder: 600 W <br> Modular: No <br><br> ₡34.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="be-quiet-system-power-u9-600w-80-plus-bronze" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/seasonic-core-gm-500-gold-semi-modular.jpg">
+            <h4>Seasonic Core GM-500</h4>
+            <br>
+            <p id="seasonic-core-gm-500-gold-semi-modular.info">Certificaci&oacute;n: 80 Plus Gold<br> Poder: 500 W <br> Modular: Semi <br><br> ₡45.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="seasonic-core-gm-500-gold-semi-modular" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/evga-supernova-750-ga-80-plus-gold-modular.jpg">
+            <h4>Evga Supernova 750</h4>
+            <br>
+            <p id="evga-supernova-750-ga-80-plus-gold-modular.info">Certificaci&oacute;n: 80 Plus Gold<br> Poder: 750 W <br> Modular: Si <br><br> ₡75.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="evga-supernova-750-ga-80-plus-gold-modular" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/evga-supernova-1000-gt-80-plus-gold-modular.jpg">
+            <h4>Evga Supernova 1000</h4>
+            <br>
+            <p id="evga-supernova-1000-gt-80-plus-gold-modular.info">Certificaci&oacute;n: 80 Plus Gold<br> Poder: 1000 W <br> Modular: Si <br><br> ₡130.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="evga-supernova-1000-gt-80-plus-gold-modular" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-rog-thor-1200p.jpg">
+            <h4>Asus Rog Thor 1200</h4>
+            <br>
+            <p id="asus-rog-thor-1200p.info">Certificaci&oacute;n: 80 Plus Platinum<br> Poder: 1200 W <br> Modular: Si <br><br> ₡234.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-rog-thor-1200p" onclick="add_product(name)">
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;" id="cases">CASE</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nzxt-h710-negro-rojo.jpg">
+            <h4>NZXT-h710-negro-rojo</h4>
+            <br>
+            <p id="nzxt-h710-negro-rojo.info">Tamaño: Mid Tower <br> Panel: Vidrio Temperado <br> Incluye 3 ventiladores <br><br> ₡92.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nzxt-h710-negro-rojo" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/azza-inferno-310dh-rgb-digital.jpg">
+            <h4>Azza Inferno 310DH</h4>
+            <br>
+            <p id="azza-inferno-310dh-rgb-digital.info">Tamaño: Mid Tower <br> Panel: Vidrio Temperado <br> RGB Digital / Addressable <br><br> ₡49.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="azza-inferno-310dh-rgb-digital" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/corsair-icue-465x-rgb.jpg">
+            <h4>Corsair Icue 465X</h4>
+            <br>
+            <p id="corsair-icue-465x-rgb.info">Tamaño: Mid Tower <br> Panel: Vidrio Temperado <br> Manejo RGB por software <br><br> ₡110.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="corsair-icue-465x-rgb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/lian-li-o11-dynamic-xl-rog-certified-blanco.jpg">
+            <h4>Lian Li O11 Dynamic XL</h4>
+            <br>
+            <p id="lian-li-o11-dynamic-xl-rog-certified-blanco.info">Tamaño: Full Tower <br> Panel: Vidrio Temperado <br> ROG CERTIFIED <br><br> ₡150.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="lian-li-o11-dynamic-xl-rog-certified-blanco" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/azza-pyramid-804v-argb.jpg">
+            <h4>Azza Pyramid 804V ARGB</h4>
+            <br>
+            <p id="azza-pyramid-804v-argb.info">Tamaño: Mini-ITX <br> Panel: Vidrio Temperado <br> Incluye 1 x ventilador Azza <br><br> ₡130.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="azza-pyramid-804v-argb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/azza-cube-802f-argb.jpg">
+            <h4>Azza Cube 802F ARGB</h4>
+            <br>
+            <p id="azza-cube-802f-argb.info">Tamaño: Mid-Tower <br> Panel: Vidrio Temperado <br> Incluye 4 x ventilador Azza <br><br> ₡205.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="azza-cube-802f-argb" onclick="add_product(name)">
+        </div>
+
+    </div>
+
+    <script src="http://127.0.0.1:80/Source_code/resourses/JS/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:80/Source_code/resourses/CSS/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:80/Source_code/index.html">Inicio</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Computers.html" id="compu">Computadoras</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Components.html" id="compo">Componentes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Peripherals.html" id="perip">Perif&eacute;ricos</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Networks.html" id="nets">Redes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/SmartHome.html" id="smart">SmartHome</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Cart.html">Ver Carrito</a>
+        <div class="animation start-home" id="mark"></div>
+    </nav>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/1.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/2.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/3.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;">LOS MEJORES PRODUCTOS PARA INCLUIR EN TU CASA</h1>
+
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/amazon-echo-dot-4th-gen-twilight-blue.jpg">
+            <h4>Amazon Echo Dot</h4>
+            <br>
+            <p id="amazon-echo-dot-4th-gen-twilight-blue.info">4th Gen <br> Conexion Wi-Fi <br> Peso: 351gr <br><br> ₡32.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="amazon-echo-dot-4th-gen-twilight-blue" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/google-chromecast-3.jpg">
+            <h4>Google Chromecast 3</h4>
+            <br>
+            <p id="google-chromecast-3.info">Video: Hasta 1080p <br> Conexion Wi-Fi <br> Dolby Digital 5.1 <br><br> ₡30.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="google-chromecast-3" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nexxt-camara-inteligente-wi-fi-nhco630.jpg">
+            <h4>Nexxt Camara Inteligente</h4>
+            <br>
+            <p id="nexxt-camara-inteligente-wi-fi-nhco630.info">Alimentaci&oacute;n a baterias <br> Conexion Wi-Fi <br> Certif: IP65 <br><br> ₡48.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nexxt-camara-inteligente-wi-fi-nhco630" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nexxt-tomacorriente-de-pared-wifi-nhew100.jpg">
+            <h4>Nexxt Tomacorriente Wi-Fi</h4>
+            <br>
+            <p id="nexxt-tomacorriente-de-pared-wifi-nhew100.info">Conexion Wi-Fi <br> Activaci&oacute;n por voz <br> 1xUSB <br><br> ₡14.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nexxt-tomacorriente-de-pared-wifi-nhew100" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/tp-link-kasa-hs105-smart-plug-mini.jpg">
+            <h4>Tp Link Smart Plug</h4>
+            <br>
+            <p id="tp-link-kasa-hs105-smart-plug-mini.info">Protocolo: IEEE 802.11b/g/n <br> Carga Maxima: 15A <br> Peso: 90.7gr <br><br> ₡14.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="tp-link-kasa-hs105-smart-plug-mini" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nexxt-interruptor-de-luz-wifi-nhes100.jpg">
+            <h4>Nexxt Interruptor De Luz</h4>
+            <br>
+            <p id="nexxt-interruptor-de-luz-wifi-nhes100.info">Emparejamiento Facil <br> Activaci&oacute;n por voz <br> 1 Solo polo <br><br> ₡12.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nexxt-interruptor-de-luz-wifi-nhes100" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nexxt-home-alarm-sensor-de-movimiento-ahbsnm04u1.jpg">
+            <h4>Nexxt Home Alarm</h4>
+            <br>
+            <p id="nexxt-home-alarm-sensor-de-movimiento-ahbsnm04u1.info">Portatil <br> Protecci&oacute;n las 24 Horas <br> Detecta Movimiento <br><br> ₡21.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nexxt-home-alarm-sensor-de-movimiento-ahbsnm04u1" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nexxt-difusor-de-aroma-smart-nhaa600.jpg">
+            <h4>Nexxt Difusor de Aroma</h4>
+            <br>
+            <p id="nexxt-difusor-de-aroma-smart-nhaa600.info">Desconexi&oacute;n automatica <br> Silencioso <br> Area: 200m <br><br> ₡29.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nexxt-difusor-de-aroma-smart-nhaa600" onclick="add_product(name)">
+        </div>
+
+    </div>
+
+    <script src="http://127.0.0.1:80/Source_code/resourses/JS/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>

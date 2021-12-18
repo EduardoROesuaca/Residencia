@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:80/Source_code/resourses/CSS/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:80/Source_code/index.html">Inicio</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Computers.html" id="compu">Computadoras</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Components.html" id="compo">Componentes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Peripherals.html" id="perip">Perif&eacute;ricos</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Networks.html" id="nets">Redes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/SmartHome.html" id="smart">SmartHome</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Cart.html">Ver Carrito</a>
+        <div class="animation start-home" id="mark"></div>
+    </nav>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/1.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/2.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/3.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <nav style="width: 100%; text-align: center;">   
+        <a href="#routers">ROUTERS</a>
+        <a href="#switches">SWITCHES</a>
+        <a href="#servers">SERVIDORES</a>
+        <a href="#modem">MODEM</a>
+    </nav>
+
+    <div class="container">
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="routers">LO ULTIMO EN ROUTERS</h1> 
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/MikroTik-Cloud-Core-Router.jpg">
+            <h4>MikroTik Cloud Core Router</h4>
+            <br>
+            <p id="MikroTik-Cloud-Core-Router.info">Formato: Montaje en rack <br> Modelo: CCR1072-1G-8S+ <br> OS: MikroTik RouterOS <br><br> ₡1.940.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="MikroTik-Cloud-Core-Router" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Ubiquiti-EdgeRouter-ER-4.jpg">
+            <h4>Ubiquiti EdgeRouter ER-4</h4>
+            <br>
+            <p id="Ubiquiti-EdgeRouter-ER-4.info">Formato: Sobremesa <br> Modelo: ER-4 <br> OS: Ubiquiti EdgeOS <br><br> ₡134.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Ubiquiti-EdgeRouter-ER-4" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/MikroTik-RouterBOARD-RB2011.jpg">
+            <h4>MikroTik RouterBOARD RB2011</h4>
+            <br>
+            <p id="MikroTik-RouterBOARD-RB2011.info">Formato: Montaje en rack <br> Modelo: RB2011UiAS-RM <br> OS: MikroTik RouterOS <br><br> ₡85.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="MikroTik-RouterBOARD-RB2011" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/MikroTik-RouterBOARD-RB2011iLS-IN.jpg">
+            <h4>MikroTik RouterBOARD RB2011iLS</h4>
+            <br>
+            <p id="MikroTik-RouterBOARD-RB2011iLS-IN.info">Formato: Montaje en rack <br> Modelo: RB2011iLS-IN <br> OS: MikroTik RouterOS <br><br> ₡85.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="MikroTik-RouterBOARD-RB2011iLS-IN" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/MikroTik-Cloud-Core-Router-CCR1009-7G-1C-1S+PC.jpg">
+            <h4>MikroTik CloudCore Router CCR1009</h4>
+            <br>
+            <p id="MikroTik-Cloud-Core-Router-CCR1009-7G-1C-1S+PC.info">Formato: Montaje en rack <br> Modelo: CCR1009-7G-1C-1S+PC <br> OS: MikroTik RouterOS v6 <br><br> ₡330.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="MikroTik-Cloud-Core-Router-CCR1009-7G-1C-1S+PC" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/MikroTik-Cloud-Router-Switch-CRS326-24S+2Q+RM.jpg">
+            <h4>Nexxt Interruptor De Luz</h4>
+            <br>
+            <p id="MikroTik-Cloud-Router-Switch-CRS326-24S+2Q+RM.info">Formato: Montaje en rack <br> Modelo: CRS326-24S+2Q+RM <br> Interconexión avanzada Capa 3 <br><br> ₡345.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="MikroTik-Cloud-Router-Switch-CRS326-24S+2Q+RM" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="switches">LO ULTIMO EN SWITCHES</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Linksys-Business-LGS328C.jpg">
+            <h4>Linksys Business LGS328C</h4>
+            <br>
+            <p id="Linksys-Business-LGS328C.info">Formato: Montaje en rack <br> Cantidad de puertos: 24 <br> Subtipo: Gigabit Ethernet <br><br> ₡121.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Linksys-Business-LGS328C" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Ubiquiti-EdgeSwitch-16.jpg">
+            <h4>Ubiquiti EdgeSwitch-16</h4>
+            <br>
+            <p id="Ubiquiti-EdgeSwitch-16.info">Formato: Montaje en rack <br> Cantidad de puertos: 16 <br> Interconexión avanzada: Capa 3 <br><br> ₡210.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Ubiquiti-EdgeSwitch-16" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Ubiquiti-EdgeSwitch-24.jpg">
+            <h4>Ubiquiti EdgeSwitch-24</h4>
+            <br>
+            <p id="Ubiquiti-EdgeSwitch-24.info">Formato: Montaje en rack <br> Cantidad de puertos: 24 <br> Interconexión avanzada: Capa 3 <br><br> ₡285.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Ubiquiti-EdgeSwitch-24" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Ubiquiti-EdgeSwitch-8.jpg">
+            <h4>Ubiquiti EdgeSwitch-8</h4>
+            <br>
+            <p id="Ubiquiti-EdgeSwitch-8.info">Formato: Montaje en rack <br> Cantidad de puertos: 8 <br> Alimentación por Ethernet (PoE): PoE+ <br><br> ₡185.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Ubiquiti-EdgeSwitch-8" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/HPE-OfficeConnect-1920S-24G-2SFP-PoE+.jpg">
+            <h4>HPE OfficeConnect 1920S</h4>
+            <br>
+            <p id="HPE-OfficeConnect-1920S-24G-2SFP-PoE+.info">Formato: Montaje en rack <br> Cantidad de puertos: 24 <br> Alimentación por Ethernet (PoE): PoE+ <br><br> ₡585.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="HPE-OfficeConnect-1920S-24G-2SFP-PoE+" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/MikroTik-RouterBOARD-hEX-lite-RB750UPr2.jpg">
+            <h4>MikroTik RouterBOARD RB750UPr2</h4>
+            <br>
+            <p id="MikroTik-RouterBOARD-hEX-lite-RB750UPr2.info">Formato: Sobremesa <br> Cantidad de puertos: 4 <br> OS: MikroTik RouterOS <br><br> ₡40.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="MikroTik-RouterBOARD-hEX-lite-RB750UPr2" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="servers">LOS SERVIDORES MAS COTIZADOS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Dell-EMC-PowerEdge-R340-Servidor.jpg">
+            <h4>Dell EMC PowerEdge-R340 Server</h4>
+            <br>
+            <p id="Dell-EMC-PowerEdge-R340-Servidor.info">CPU: Xeon E-2234 <br> HDD: 1 TB <br> RAM: 8 GB <br><br> ₡950.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Dell-EMC-PowerEdge-R340-Servidor" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Dell-EMC-PowerEdge-R750xs-Servidor.jpg">
+            <h4>Dell EMC PowerEdge-R750xs</h4>
+            <br>
+            <p id="Dell-EMC-PowerEdge-R750xs-Servidor.info">CPU: Xeon Silver 4314 <br> HDD: 2 TB <br> RAM: 16 GB <br><br> ₡1.900.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Dell-EMC-PowerEdge-R750xs-Servidor" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/HPE-ProLiant-DL160-Gen10-Servidor.jpg">
+            <h4>HPE ProLiant DL160 Gen10</h4>
+            <br>
+            <p id="HPE-ProLiant-DL160-Gen10-Servidor.info">CPU: Xeon Bronze 3206R <br> HDD: 2 TB <br> RAM: 32 GB <br><br> ₡1.650.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="HPE-ProLiant-DL160-Gen10-Servidor" onclick="add_product(name)">
+        </div>
+
+
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/HPE-ProLiant-DL580-Gen9-High-Performance.jpg">
+            <h4>HPE ProLiant DL580 Gen9 High</h4>
+            <br>
+            <p id="HPE-ProLiant-DL580-Gen9-High-Performance.info">CPU: 4 x Xeon E7-4850V3 <br> HDD: N/A <br> RAM: 128 GB <br><br> ₡25.650.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="HPE-ProLiant-DL580-Gen9-High-Performance" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/HPE-ProLiant-BL460c-Gen9-Servidor.jpg">
+            <h4>HPE ProLiant BL460C Gen9</h4>
+            <br>
+            <p id="HPE-ProLiant-BL460c-Gen9-Servidor.info">CPU: 2 x Xeon E5-2660V4 <br> HDD: N/A <br> RAM: 128 GB <br><br> ₡3.250.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="HPE-ProLiant-BL460c-Gen9-Servidor" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/HPE-DL180-Gen9-E5-2620V4.jpg">
+            <h4>Nexxt Interruptor De Luz</h4>
+            <br>
+            <p id="HPE-DL180-Gen9-E5-2620V4.info">CPU: Xeon E5-2600 <br> HDD: 2 TB <br> RAM: 16 GB <br><br> ₡1.795.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="HPE-DL180-Gen9-E5-2620V4" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;" id="modem">LOS MEJORES MODEM Y REPETIDORES</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Nexxt-Wireless-router.jpg">
+            <h4>Nexxt Wireless router</h4>
+            <br>
+            <p id="Nexxt-Wireless-router.info">Protocolo: 802.11a/b/g/n/ac <br> AC1200mbps 3p 10/100 <br> Enrutador inalámbrico <br><br> ₡38.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Nexxt-Wireless-router" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Linksys-EA6350-Enrutador-inalámbrico.jpg">
+            <h4>Linksys EA6350 Modem/R</h4>
+            <br>
+            <p id="Linksys-EA6350-Enrutador-inalámbrico.info">Protocolo: 802.11a/b/g/n/ac <br> Puerto USB <br> Modelo: EA6350 <br><br> ₡43.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Linksys-EA6350-Enrutador-inalámbrico" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Linksys-E5400-Router.jpg">
+            <h4>Linksys E5400 Router</h4>
+            <br>
+            <p id="Linksys-E5400-Router.info">Bandas: 2.4 Ghz/5 Ghz <br> Protocolo: 802.11a/b/g/n/ac <br> 4 Puertos <br><br> ₡48.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Linksys-E5400-Router" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Ubiquiti-airFiber-AF-5XHD.jpg">
+            <h4>Ubiquiti AirFiber AF-5XHD</h4>
+            <br>
+            <p id="Ubiquiti-airFiber-AF-5XHD.info">Factor de forma: Externo <br> Protocolo de interconexión: AirFiber <br> Formato: Montaje en mástil <br><br> ₡34.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Ubiquiti-airFiber-AF-5XHD" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Ubiquiti-UniFi-UAP-NanoHDAP.jpg">
+            <h4>Ubiquiti UniFi-U AP</h4>
+            <br>
+            <p id="Ubiquiti-UniFi-UAP-NanoHDAP.info">Velocidad: 1733 Mbps <br> Protocolo: 802.11a/b/g/n/ac <br> Conectividad: Inalámbrico <br><br> ₡22.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Ubiquiti-UniFi-UAP-NanoHDAP" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/Linksys-VELOP-Whole-Home-Mesh.jpg">
+            <h4>Linksys VELOP Home-Mesh</h4>
+            <br>
+            <p id="Linksys-VELOP-Whole-Home-Mesh.info">Conectividad: Inalámbrico <br> Protocolo: 802.11a/b/g/n/ac <br> Bluetooth 4.1 <br><br> ₡44.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="Linksys-VELOP-Whole-Home-Mesh" onclick="add_product(name)">
+        </div>
+
+    </div>
+
+    <script src="http://127.0.0.1:80/Source_code/resourses/JS/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>

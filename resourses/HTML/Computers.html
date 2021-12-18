@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:80/Source_code/resourses/CSS/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:80/Source_code/index.html">Inicio</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Computers.html" id="compu">Computadoras</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Components.html" id="compo">Componentes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Peripherals.html" id="perip">Perif&eacute;ricos</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Networks.html" id="nets">Redes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/SmartHome.html" id="smart">SmartHome</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Cart.html">Ver Carrito</a>
+        <div class="animation start-home" id="mark"></div>
+    </nav>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/1.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/2.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/3.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;">LOS MEJORES PC DEL MERCADO</h1>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/frost-380x380.jpg">
+            <h4>Extreme PC 1</h4>
+            <br>
+            <p id="frost-380x380.info">CPU: Ryzen 5 5600x <br> GPU: RTX3060 Ti <br> RAM: 8 GB <br><br> ₡925.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="frost-380x380" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/IG-NEXUS-2-0-380x380.jpg">
+            <h4>Ranger PC 1</h4>
+            <br>
+            <p id="IG-NEXUS-2-0-380x380.info">CPU: Ryzen 5 5600x <br> GPU: RTX3060 12 GB <br> RAM: 8 GB <br><br> ₡875.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="IG-NEXUS-2-0-380x380" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/IG-RANGER-v2-0-380x380.jpg">
+            <h4>Ranger PC 2</h4>
+            <br>
+            <p id="IG-RANGER-v2-0-380x380.info">CPU: Intel I3 10100F <br> GPU: GTX1050 Ti <br> RAM: 8 GB <br><br> ₡465.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="IG-RANGER-v2-0-380x380" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/matrix-0-380x380.jpg">
+            <h4>Matrix PC 1</h4>
+            <br>
+            <p id="matrix-0-380x380.info">CPU: Ryzen 5 5600G <br> GPU: Vega 11 <br> RAM: 8 GB <br><br> ₡325.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="matrix-0-380x380" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/moba2-380x380.jpg">
+            <h4>MOBA PC 1</h4>
+            <br>
+            <p id="moba2-380x380.info">CPU: AMD ATHLON 3000G <br> GPU: Vega 3 <br> RAM: 8 GB <br><br> ₡250.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="moba2-380x380" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/power-380x380.jpg">
+            <h4>Power PC 2</h4>
+            <br>
+            <p id="power-380x380.info">CPU: Ryzen 7 5800X <br> GPU: RTX 3070 8 GB <br> RAM: 16 GB <br><br> ₡1.300.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="power-380x380" onclick="add_product(name)">
+        </div>
+
+
+
+
+
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/NEXUS-380x380.jpg">
+            <h4>Nexus PC 2</h4>
+            <br>
+            <p id="NEXUS-380x380.info">CPU: Ryzen 5 5600X <br> GPU: RTX 3060 12 GB <br> RAM: 8 GB <br><br> ₡925.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="NEXUS-380x380" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/ultrav2-380x380.jpg">
+            <h4>Ultra PC 1</h4>
+            <br>
+            <p id="ultrav2-380x380.info">CPU: Intel i5 10400 <br> GPU: GTX 1660 Super <br> RAM: 8 GB <br><br> ₡535.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="ultrav2-380x380" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/warrior-380x380.jpg">
+            <h4>Warrior PC 2</h4>
+            <br>
+            <p id="warrior-380x380.info">CPU: Ryzen 3 3200G <br> GPU: GTX 1050 Ti <br> RAM: 8 GB <br><br> ₡435.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="warrior-380x380" onclick="add_product(name)">
+        </div>
+    </div>
+
+    <script src="http://127.0.0.1:80/Source_code/resourses/JS/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>

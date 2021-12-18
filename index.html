@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:80/Source_code/resourses/CSS/style.css">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="http://127.0.0.1:80/Source_code/index.html">Inicio</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Computers.html" id="compu">Computadoras</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Components.html" id="compo">Componentes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Peripherals.html" id="perip">Perif&eacute;ricos</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Networks.html" id="nets">Redes</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/SmartHome.html" id="smart">SmartHome</a>
+        <a href="http://127.0.0.1:80/Source_code/resourses/HTML/Cart.html">Ver Carrito</a>
+        <div class="animation start-home" id="mark"></div>
+    </nav>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/1.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/2.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/3.jpg" alt="">
+            </li>
+            <li>
+                <img class="img-slider" src="http://127.0.0.1:80/Source_code/resourses/images/Slider/4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; text-align: center; width: 100%;">LOS PROCESADORES M&Aacute;S VENDIDOS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/amd-athlon-3000g.jpg">
+            <h4>AMD Athlon 3000G</h4>
+            <br>
+            <p id="amd-athlon-3000g.info">Reloj base: 3.5GHz <br> N.° de núcleos: 2 <br> Socket: AM4 <br><br> ₡35.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="amd-athlon-3000g" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/intel-core-i5-11600k.jpg">
+            <h4>Intel Core I5-11600K</h4>
+            <br>
+            <p id="intel-core-i5-11600k.info">Reloj base: 3.9GHz <br> N.° de núcleos: 6 <br> Socket: LGA1200 <br><br> ₡190.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="intel-core-i5-11600k" onclick="add_product(name)">
+        </div>
+        
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/amd-ryzen-5-3600.jpg">
+            <h4>AMD Ryzen 5 3600</h4>
+            <br>
+            <p id="amd-ryzen-5-3600.info">Reloj base: 4.2GHz <br> N.° de núcleos: 6 <br> Socket: AM4 <br><br> ₡152.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="amd-ryzen-5-3600" onclick="add_product(name)">
+        </div>
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;">LOS CASE M&Aacute;S VENDIDOS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/azza-cube-802f-argb.jpg">
+            <h4>Azza Cube 802F ARGB</h4>
+            <br>
+            <p id="azza-cube-802f-argb.info">Tamaño: Mid Tower <br> Panel: Vidrio temperado <br> RGB Direccionable <br><br> ₡170.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="azza-cube-802f-argb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/corsair-icue-465x-rgb.jpg">
+            <h4>Corsair Icue 465X RGB</h4>
+            <br>
+            <p id="corsair-icue-465x-rgb.info">Tamaño: Mid Tower <br> Panel: Vidrio temperado <br> Soporte GPU vertical <br><br> ₡140.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="corsair-icue-465x-rgb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/nzxt-h710-negro-rojo.jpg">
+            <h4>NZXT H710</h4>
+            <br>
+            <p id="nzxt-h710-negro-rojo.info">Tamaño: Mid Tower <br> Panel: Vidrio temperado <br> USB 3.1 Gen2 Type-C <br><br> ₡95.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="nzxt-h710-negro-rojo" onclick="add_product(name)">
+        </div>
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%; display: inline; text-align: center; width: 100%;">LAS GPU'S M&Aacute;S VENDIDAS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/asus-tuf-geforce-rtx3060-oc-12g-v2.jpg">
+            <h4>Nvidia RTX 3060 OC 12GB</h4>
+            <br>
+            <p id="asus-tuf-geforce-rtx3060-oc-12g-v2.info">Bus: PCI-E 4.0 <br> Memoria: 12 GB Gddr6 <br> 2.7 Slots <br><br> ₡550.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="asus-tuf-geforce-rtx3060-oc-12g-v2" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/evga-geforce-rtx-3080-ti-ftw3-ultra-12-gb.jpg">
+            <h4>Nvidia RTX 3080 TI FTW 12GB</h4>
+            <br>
+            <p id="evga-geforce-rtx-3080-ti-ftw3-ultra-12-gb.info">Bus: PCI-E 4.0 <br> Memoria: 12 GB Gddr6 <br> 10240 Cuda Cores <br><br> ₡1.225.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="evga-geforce-rtx-3080-ti-ftw3-ultra-12-gb" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/msi-radeon-rx-6900-xt-gaming-z-trio-16-gb.jpg">
+            <h4>AMD RX 3900 XT Z Trio 16GB</h4>
+            <br>
+            <p id="msi-radeon-rx-6900-xt-gaming-z-trio-16-gb.info">Bus: PCI-E 4.0 <br> Memoria: 16 GB Gddr6 <br> Boost: 2425MHz <br><br> ₡1.200.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="msi-radeon-rx-6900-xt-gaming-z-trio-16-gb" onclick="add_product(name)">
+        </div>
+
+
+        <h1 style="color: white; margin-top: 5%; margin-bottom: 2%;display: inline; text-align: center; width: 100%;">LAS MEMORIAS RAM M&Aacute;S VENDIDAS</h1>
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/aorus-rgb-8-gb-ddr4-3200.jpg">
+            <h4>Aorus DDR4 3200Mhz 8GB</h4>
+            <br>
+            <p id="aorus-rgb-8-gb-ddr4-3200.info">Voltaje: 1.35V <br> Capacidad: 16 GB DDR4 <br> RGB Fusion 2.0 Supported <br><br> ₡35.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="aorus-rgb-8-gb-ddr4-3200" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/gskill-trident-z-rgb-8-gb-ddr4-3200.jpg">
+            <h4>G.SKILL Trident Z RGB 8GB</h4>
+            <br>
+            <p id="gskill-trident-z-rgb-8-gb-ddr4-3200.info">Voltaje: 1.35V <br> Capacidad: 8 GB DDR4 <br> Optimizadas para Ryzen <br><br> ₡37.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="gskill-trident-z-rgb-8-gb-ddr4-3200" onclick="add_product(name)">
+        </div>
+
+        <div class="card">
+            <img src="http://127.0.0.1:80/Source_code/resourses/images/products/adata-xpg-spectrix-d60g-16-gb-ddr4-3200.jpg">
+            <h4>Adata Spectrix D50  8GB</h4>
+            <br>
+            <p id="adata-xpg-spectrix-d60g-16-gb-ddr4-3200.info">Voltaje: 1.35V <br> Capacidad: 8 GB DDR4 <br> Latencia: 16 <br><br> ₡34.000</p>
+            <br>
+            <input type="button" value="Agregar al carrito", id="btn-add" name="adata-xpg-spectrix-d60g-16-gb-ddr4-3200" onclick="add_product(name)">
+        </div>
+    </div>
+
+    <script src="http://127.0.0.1:80/Source_code/resourses/JS/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>
